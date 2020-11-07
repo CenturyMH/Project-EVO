@@ -1,4 +1,4 @@
-    # User Story:
+# User Story:
 # User can search two species and see how closely they are related
 # User will see a tree depicting where in the tree of life the species are located with respect to each other
 # i.e Pan Troglodyte and Pan Paniscus are one species apart, Pan Troglodyte and Homo Sapiens are one genus apart, etc
