@@ -1,6 +1,6 @@
-import re
+def readwrite():
+    with open(r"C:\Users\Martin\Desktop\python_test\textfiletest.txt", mode="r") as f:
+        for line in f:
+            print(line)
 
-text = '   gf  gfdAAA1234ZZZuijjk'
-x = re.search("[^\s]+", text)
-
-print(x.group())
+readwrite()

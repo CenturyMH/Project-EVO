@@ -2,7 +2,7 @@ import re
 
 id_list = []
 def taxa_id(taxonID):
-    with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode = "r", encoding="utf-8") as f:
+    with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r", encoding="utf-8") as f:
         # my_pattern = re.compile(taxonID)
         # for match in re.finditer(my_pattern, f.read()):
         #     id_list.append(match.group(0))
@@ -10,7 +10,7 @@ def taxa_id(taxonID):
         for line in f:
             if taxonID in line:
                 firstWord = re.search("[^\s]+", line)
-                if firstWord.group() == taxonID:
+                if firstWord.group(0) == taxonID:
                     id_list.append(line)
         
 def vernac_id(taxonID):
@@ -29,6 +29,6 @@ taxa_id("35489682")
 for i in id_list:
     print(i, "\n")
 
-# taxa_id now only returns main species (haven't checked for bugs)
+# File reading doesn't work anymore for some reason
 # Next goal: Make every taxonID unique in the file to the species (Get rid of subspecies)
 # to run taxa_id here, taxa.txt cannot be open
