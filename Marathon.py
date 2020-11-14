@@ -1,16 +1,20 @@
 import re
 
-def readwrite():
+def readwrite(id):
     with open(r"C:\Users\Martin\Desktop\python_test\textfiletest.txt", mode="r") as f:
         for line in f:
-            # firstletter = "d"
-            # if firstletter in line:
+            # if id in line:
             # numtest = re.search("\d", line)
             # if numtest.group()
             print(line)
 
 # readwrite()
-test = "abc123"
-numtest = re.search(r"\d+", test)
+test = ["abc1", "def2", "ghi3"]
+result = []
+for i in range(3):
+    x = int(result.append(re.search(r"\d", test[i]).group(0))
+    result.append(x)
+    # if x < 1:
+    #     result.append(x)
 
-print(numtest.group(0))
+print(result)
