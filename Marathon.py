@@ -1,21 +1,22 @@
 import re
 
-# def readwrite(id):
-#     with open(r"C:\Users\Martin\Desktop\python_test\textfiletest.txt", mode="r") as f:
-#         for line in f:
-#             # if id in line:
-#             # numtest = re.search("\d", line)
-#             # if numtest.group()
-#             print(line)
+def readwrite():
+    with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="w") as f:
+        for line in f:
+            # if int(re.search(r"\d", line).group()) > 2:
+            print(line)
+            # f.write(line)
 
-# readwrite()
+
+readwrite()
 # test = ["abc1", "def2", "ghi3"]
-test = ["abc1", "def2", "ghi3", ]
-result = []
-for i in range(len(test)):
-    if int(re.search(r"\d", test[i]).group()) > 1:
-        result.append(test[i])
+# test = ["abc1", "def2", "ghi3", ]
+# result = []
+# for i in range(len(test)):
+#     if int(re.search(r"\d", test[i]).group()) > 1:
+#         result.append(test[i])
 
-print(result)
+# print(result)
 
-# non commented code shows how to extract only the strings i want based on regex matches
+# https://stackoverflow.com/questions/11469228/replace-and-overwrite-instead-of-appending/11469328#11469328
+# try writing to new file instead of rewriting existing file, open first one in read and second in write
