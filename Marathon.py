@@ -1,14 +1,18 @@
 import re
 
+# int(re.match(r"\d", line).group(0))
+xd = []
 def readwrite():
-    with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="w") as f:
+    with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
         for line in f:
-            # if int(re.search(r"\d", line).group()) > 2:
-            print(line)
-            # f.write(line)
-
+            num = re.match(r"\d", line)
+            if num:
+                print(line, "fuck yeah")
+            else:
+                print(line, "this line sucks")
 
 readwrite()
+# print(readwrite(7))
 # test = ["abc1", "def2", "ghi3"]
 # test = ["abc1", "def2", "ghi3", ]
 # result = []

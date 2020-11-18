@@ -30,4 +30,6 @@ for i in id_list:
     print(i, "\n")
 
 # Next goal: Make every taxonID unique in the file to the species (Get rid of subspecies)
-# to run taxa_id here, taxa.txt cannot be open
+
+# Possible end goal: two functions, one reads taxa with taxonID parameter and saves that line
+# into a new string. Second function writes that string into a new text file
