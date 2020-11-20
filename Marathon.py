@@ -3,13 +3,15 @@ import re
 # int(re.match(r"\d", line).group(0))
 xd = []
 def readwrite():
-    with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
-        for line in f:
-            num = re.match(r"\d", line)
-            if num:
-                print(line, "fuck yeah")
+    with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r") as f:
+        for i, line in enumerate(f):
+            white = re.match(r"([^\s]+)", line)
+            if i == 3:
+                break
+            if white:
+                print(line, white.group(), "yerr", "\n")
             else:
-                print(line, "this line sucks")
+                print(line, "nope", "\n")
 
 readwrite()
 # print(readwrite(7))
