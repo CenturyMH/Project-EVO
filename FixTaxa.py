@@ -31,5 +31,5 @@ for i in id_list:
 
 # Next goal: Make every taxonID unique in the file to the species (Get rid of subspecies)
 
-# Possible end goal: two functions, one reads taxa with taxonID parameter and saves that line
-# into a new string. Second function writes that string into a new text file
+# Possible end goal: two functions, one reads taxa with taxonID parameter and saves line with
+# taxonID into a new string. Second function writes that string into a new text file

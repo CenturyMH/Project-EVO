@@ -2,18 +2,22 @@ import re
 
 # int(re.match(r"\d", line).group(0))
 xd = []
-def readwrite():
-    with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r") as f:
+with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r", encoding="utf-8") as f:
         for i, line in enumerate(f):
-            white = re.match(r"([^\s]+)", line)
-            if i == 3:
-                break
-            if white:
-                print(line, white.group(), "yerr", "\n")
-            else:
-                print(line, "nope", "\n")
+            print(i)
+        print("done")
+# def readwrite(id):
+#     with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
+        
+#         for line in f:
+#             white = re.match(r"[^\s]+", line)
+#             if id in line:
+#                 if white.group() == id:
+#                     print(line)
+#                 else:
+#                     print(line, "delete this???")
 
-readwrite()
+# readwrite("123")
 # print(readwrite(7))
 # test = ["abc1", "def2", "ghi3"]
 # test = ["abc1", "def2", "ghi3", ]
