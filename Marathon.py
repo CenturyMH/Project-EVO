@@ -5,7 +5,6 @@ xd = []
 with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r", encoding="utf-8") as f:
         for i, line in enumerate(f):
             print(i)
-        print("done")
 # def readwrite(id):
 #     with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
         
@@ -28,5 +27,6 @@ with open(r"C:\Users\Martin\Desktop\Taxonomy\taxa.txt", mode="r", encoding="utf-
 
 # print(result)
 
+# 3865179 lines were counted by looping taxa.txt, took about 8-9 minutes
 # https://stackoverflow.com/questions/11469228/replace-and-overwrite-instead-of-appending/11469328#11469328
 # try writing to new file instead of rewriting existing file, open first one in read and second in write
