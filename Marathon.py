@@ -4,13 +4,13 @@ lines_to_write = []
 def rewrite():
     with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
         lines = f.read().splitlines()
-        # print(lines)
-        print(f.readlines())
-        for iter1 in lines:
-            taxonID = re.match(r"[^\s]+", iter1).group()
-            for iter2 in lines:
-                if taxonID in iter2 and taxonID != re.match(r"[^\s]+", iter2).group():
-                    lines_to_write.append(iter2)
+        print(lines)
+        for position1, iter1 in enumerate(lines):
+            taxonID1 = re.match(r"[^\s]+", iter1).group()
+            for position2, iter2 in enumerate(lines):
+                taxonID2 = re.match(r"[^\s]+", iter2).group()
+                if taxonID1 in iter2 and position1 == position2:
+                    lines_to_write.append(iter1)
 
 rewrite()
 print(lines_to_write)
