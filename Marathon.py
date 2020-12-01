@@ -1,25 +1,18 @@
 import re
 
-lines_to_write = []
+id_list = []
 # def rewrite():
-with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as f:
-    lines = f.readlines()
-        # for position1, iter1 in enumerate(f):
-        #     taxonID1 = re.match(r"[^\s]+", iter1).group()
-        #     for position2, iter2 in enumerate(f):
-        #         taxonID2 = re.match(r"[^\s]+", iter2).group()
-        #         if taxonID1 in iter2:
-        #             if position1 == position2:
-        #                 lines_to_write.append(iter1)
-                    # else:
-#                         print(position1, position2)
-for line in lines:
-    print(line)
+with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r") as file1:
+    lines = file1.readlines()
+    for line in lines:
+        id_list.append(re.match(r"[^\s]+", line).group())
 
-print("\n\n")
-for line in lines:
-    if "456" == re.match(r"[^\s]+", line).group():
-        print(line)
+
+with open(r"C:\Users\Martin\Desktop\python_test\testing2.txt", mode="w+") as file2:
+    new_id_list = []
+    for line in lines:
+        if re.match(r"[^\s]+", line).group() not in file2:
+            pass
 
 # rewrite()
 # print(lines_to_write)
