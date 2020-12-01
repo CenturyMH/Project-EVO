@@ -24,7 +24,7 @@ for line in lines:
 # rewrite()
 # print(lines_to_write)
 
-# TRY: seek() counts every character in file, so use length of line to find position
+# https://stackoverflow.com/questions/4710067/how-to-delete-a-specific-line-in-a-file
 # 3865179 lines were counted by looping through taxa.txt, took about 8-9 minutes
 # https://stackoverflow.com/questions/11469228/replace-and-overwrite-instead-of-appending/11469328#11469328
 # try writing to new file instead of rewriting existing file, open first one in read and second in write
