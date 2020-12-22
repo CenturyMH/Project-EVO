@@ -15,7 +15,7 @@ with open(r"C:\Users\Martin\Desktop\python_test\testing2.txt", mode="w+", encodi
             file2.write(" ".join(lines_list[i]) + "\n")
             print(i)
 
-print(id_list)
+print(id_list, "\n", lines_list, sep="")
 # Killer Whale: 35489682
 # Next goal: Make every taxonID unique in the file to the species (Get rid of subspecies)
 # 3865179 lines were counted by looping through taxa.txt, took about 8-9 minutes
