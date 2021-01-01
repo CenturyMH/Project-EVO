@@ -9,6 +9,7 @@ with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r", encodin
 
 with open(r"C:\Users\Martin\Desktop\python_test\testing2.txt", mode="w+", encoding="utf-8") as file2:
     for i, id in enumerate(id_list):
+        # Problem is most likely right here. Conditional logic probably needs more complexity.
         if any([id in line and id != line[0] for line in lines_list]):
             pass
         else:
