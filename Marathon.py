@@ -1,11 +1,18 @@
-import re
+# import re
 
+# with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r", encoding="utf-8") as file1:
+#     with open(r"C:\Users\Martin\Desktop\python_test\testing2.txt", mode="w+", encoding="utf-8") as file2:
+#         for line in file1:
+#             id = re.search(r"([^\s]+)", line).group()
+#             file2.write(id + "\n")
+
+# # https://docs.python.org/3/library/itertools.html
+# # Goal: do algorithm without using lists. Try writing one line at a time.
+# # One line per loop iteration.
+# # id gets new definition every loop, go from there
 with open(r"C:\Users\Martin\Desktop\python_test\testing1.txt", mode="r", encoding="utf-8") as file1:
-    with open(r"C:\Users\Martin\Desktop\python_test\testing2.txt", mode="w+", encoding="utf-8") as file2:
-        for line in file1:
-            id = re.search(r"([^\s]+)", line).group()
-            file2.write(id + "\n")
+    x = []
+    for line in file1:
+        x.append(line)
 
-# Goal: do algorithm without using lists. Try writing one line at a time.
-# One line per loop iteration.
-# id gets new definition every loop, go from there
+    print(all(i == x[0] for i in x))
