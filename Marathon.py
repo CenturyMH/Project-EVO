@@ -6,7 +6,8 @@
 #             id = re.search(r"([^\s]+)", line).group()
 #             file2.write(id + "\n")
 
-# # LEARN MORE ABOUT ITERATOR VS ITERABLE, PLAY WITH ITERTOOLS
+# # GENERATORS ARE DOPE, LEARN MORE
+# # https://docs.python.org/dev/reference/expressions.html#generator-expressions
 # # https://docs.python.org/3/library/itertools.html
 # # Goal: do algorithm without using lists. Try writing one line at a time.
 # # One line per loop iteration.
@@ -14,7 +15,9 @@
 
 
 x = [1, 2, 3]
+y = [4, 5, 6]
 
-y = iter(x)
 
-print(sum(y))
+listcomp = [(a, b) for a in x for b in y]
+newgen = ((a, b) for a in x for b in y)
+
